@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
-import { useState } from "react";
+import { useState, ReactElement } from "react";
 import Link from "next/link";
 
 interface FAQItem {
   question: string;
-  answer: string | JSX.Element;
+  answer: string | ReactElement;
 }
 
 const faqs: FAQItem[] = [
@@ -78,8 +78,7 @@ const faqs: FAQItem[] = [
           preflight.json
         </code>
         . Common directories like{" "}
-        <code className="bg-zinc-800 px-1.5 py-0.5 rounded">node_modules</code>
-        ,{" "}
+        <code className="bg-zinc-800 px-1.5 py-0.5 rounded">node_modules</code>,{" "}
         <code className="bg-zinc-800 px-1.5 py-0.5 rounded">dist</code>, and{" "}
         <code className="bg-zinc-800 px-1.5 py-0.5 rounded">build</code> are
         typically excluded.
@@ -236,4 +235,3 @@ export default function FAQPage() {
     </main>
   );
 }
-
