@@ -42,7 +42,7 @@ const faqs: FAQItem[] = [
   {
     question: "Do I need to install anything?",
     answer:
-      "You can run Preflight AI with npx (no installation needed), or install it as a dev dependency in your project. It requires Node.js v18 or newer.",
+      "You can run Preflight AI with npx prefl (no installation needed), or install it as a dev dependency in your project. It requires Node.js v18 or newer.",
   },
   {
     question: "Does it work with my existing Git workflow?",
