@@ -33,9 +33,6 @@ export default function Home() {
           <span className="text-red-500">
             Find <span className="text-white">and</span> Fix
           </span>
-          <h1>
-            Prefl<sup className="text-red-500">.run</sup>
-          </h1>
           <br className="hidden md:block" />
           critical issues before they fly on production
         </motion.h1>
