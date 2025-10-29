@@ -55,7 +55,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full max-w-md"
         >
-          <CommandBlock command="npx preflight-ai" />
+          <CommandBlock command="npx prefl" />
         </motion.div>
 
         <motion.p
@@ -285,7 +285,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="max-w-md mx-auto mb-8"
           >
-            <CommandBlock command="npx preflight init" />
+            <CommandBlock command="npx prefl init" />
           </motion.div>
 
           <motion.div

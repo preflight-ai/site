@@ -1,6 +1,12 @@
 "use client";
 
-import { ArrowRight, GitCommit, Sparkles, Shield, CheckCircle } from "lucide-react";
+import {
+  ArrowRight,
+  GitCommit,
+  Sparkles,
+  Shield,
+  CheckCircle,
+} from "lucide-react";
 import { motion } from "framer-motion";
 
 export const FlowDiagram = () => {
@@ -13,7 +19,7 @@ export const FlowDiagram = () => {
     {
       icon: <Sparkles size={24} />,
       title: "Run Preflight",
-      desc: "npx preflight analyze",
+      desc: "npx prefl analyze",
     },
     {
       icon: <Shield size={24} />,

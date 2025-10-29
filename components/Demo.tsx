@@ -25,7 +25,7 @@ export const TerminalDemo = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="text-indigo-400">$</span> npx preflight analyze
+            <span className="text-indigo-400">$</span> npx prefl analyze
           </motion.p>
 
           <motion.p

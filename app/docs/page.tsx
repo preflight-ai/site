@@ -94,7 +94,7 @@ export default function GetStartedPage() {
             Run Preflight AI directly with npx (no installation required):
           </p>
           <div className="max-w-lg mb-6">
-            <CommandBlock command="npx preflight-ai" />
+            <CommandBlock command="npx prefl" />
           </div>
 
           <p className="text-zinc-400 mb-4">
@@ -123,7 +123,7 @@ export default function GetStartedPage() {
           </p>
 
           <div className="max-w-lg mb-6">
-            <CommandBlock command="npx preflight init" />
+            <CommandBlock command="npx prefl init" />
           </div>
 
           <p className="text-zinc-400 mb-4">This interactive setup will:</p>
@@ -197,7 +197,7 @@ GROQ_API_KEY=your_api_key_here`}
           </p>
 
           <div className="max-w-lg mb-6">
-            <CommandBlock command="npx preflight analyze" />
+            <CommandBlock command="npx prefl analyze" />
           </div>
 
           <p className="text-zinc-400 mb-4">Preflight will:</p>
