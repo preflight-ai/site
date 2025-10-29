@@ -25,7 +25,8 @@ export const TerminalDemo = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="text-indigo-400">$</span> npx prefl analyze
+            <span className="text-indigo-400">$</span> git commit -m add{" "}
+            {'"feat: add new feature"'}
           </motion.p>
 
           <motion.p
@@ -45,10 +46,18 @@ export const TerminalDemo = () => {
           >
             <p className="text-red-400">❌ Critical issue found</p>
             <p className="text-zinc-400 text-xs mt-1">
-              File: <span className="text-zinc-300">auth.json</span>
+              File: <span className="text-zinc-300">File: src/App.tsx</span>
             </p>
             <p className="text-zinc-400 text-xs">
-              Issue: Hard-coded Groq API key detected. Move to .env immediately.
+              Issue: Empty useEffect with no dependency array creates an
+              infinite loop that runs on every render, causing performance
+              degradation and potential memory issues
+            </p>
+            <p className="text-zinc-400 text-xs">
+              Fix: Remove the empty useEffect or add proper dependencies:
+              {
+                "useEffect(() => { /* your effect logic */ }, [/* dependencies */])"
+              }
             </p>
           </motion.div>
 
