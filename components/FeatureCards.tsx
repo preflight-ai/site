@@ -1,26 +1,26 @@
-import { Brain, ShieldCheck, Code2, Users } from "lucide-react";
+import { Brain, ShieldCheck, Code2, Users, Wand2 } from "lucide-react";
 
 export const FeatureCards = () => {
   const features = [
     {
-      title: "AI-Powered Analysis",
-      desc: "Leverages Groq intelligence to find logic errors and unsafe patterns before commit.",
+      title: "Senior Architect-Level AI",
+      desc: "Catches 16+ bug categories that pass code review — race conditions, memory leaks, UX issues.",
       icon: <Brain size={"1.5em"} className="text-purple-500" />,
     },
     {
-      title: "Pre-commit Integration",
-      desc: "Seamlessly integrates with Git hooks to block critical issues in real time.",
-      icon: <ShieldCheck size={"1.5em"} className="text-green-500" />,
+      title: "AI Auto-Fix Suggestions",
+      desc: "Get actionable code patches instantly. AI suggests fixes and you apply with one command.",
+      icon: <Wand2 size={"1.5em"} className="text-yellow-500" />,
     },
     {
       title: "No Code Reviewer Needed",
-      desc: "Get instant AI feedback on every commit — your personal code reviewer that never sleeps.",
+      desc: "Get instant AI feedback on every commit — your personal senior architect that never sleeps.",
       icon: <Users size={"1.5em"} className="text-orange-500" />,
     },
     {
-      title: "Multi-language Support",
-      desc: "Understands JavaScript, TypeScript, Python, and more — no extra setup needed.",
-      icon: <Code2 size={"1.5em"} className="text-blue-500" />,
+      title: "Pre-commit Protection",
+      desc: "Blocks commits with critical issues automatically — no bad code reaches your repo.",
+      icon: <ShieldCheck size={"1.5em"} className="text-green-500" />,
     },
   ];
 

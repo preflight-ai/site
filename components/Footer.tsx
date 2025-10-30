@@ -128,7 +128,7 @@ export const Footer = () => {
             <span className="text-white">Prefl.run</span>. Open source and built with ❤️
           </p>
           <p className="text-zinc-600">
-            Powered by <span className="text-zinc-400">Groq AI</span>
+            Powered by <span className="text-red-500">Groq AI</span>
           </p>
         </div>
       </div>
