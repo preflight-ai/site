@@ -45,14 +45,9 @@ export default function DonatePage() {
             rel="noopener noreferrer"
           >
             <Button className="cursor-pointer flex items-center gap-2 px-8 py-6 text-base">
-              <Image
-                src="/opencollective-logo.webp"
-                alt="Open Collective"
-                width={24}
-                height={24}
-                priority
-              />
-              Donate via Open Collective
+              <a href="https://ko-fi.com/L3L21NM95C" target="_blank">
+                Support me on Ko-fi
+              </a>
               <Heart className="text-red-400" size={18} />
             </Button>
           </Link>
@@ -136,19 +131,6 @@ export default function DonatePage() {
                 <div className="font-semibold">support@prefl.run</div>
               </div>
             </a>
-
-            <a
-              href="https://github.com/preflight-ai/cli"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 px-6 py-3 border border-zinc-700 hover:border-zinc-600 rounded-lg transition-colors"
-            >
-              <Github size={20} />
-              <div className="text-left">
-                <div className="text-sm text-zinc-400">Star us on</div>
-                <div className="font-semibold">GitHub</div>
-              </div>
-            </a>
           </div>
 
           <p className="text-zinc-500 text-sm text-center mt-8">
@@ -166,13 +148,17 @@ export default function DonatePage() {
         >
           <h2 className="text-xl font-bold mb-4">Other Ways to Support</h2>
           <div className="flex flex-wrap gap-3 justify-center text-sm">
-            <a
+          <a
               href="https://github.com/preflight-ai/cli"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors"
+              className="flex items-center gap-3 px-6 py-3 border border-zinc-700 hover:border-zinc-600 rounded-lg transition-colors"
             >
-              ⭐ Star on GitHub
+              <Github size={20} />
+              <div className="text-left">
+                <div className="text-sm text-zinc-400">Star us on</div>
+                <div className="font-semibold">GitHub</div>
+              </div>
             </a>
           </div>
         </motion.div>
