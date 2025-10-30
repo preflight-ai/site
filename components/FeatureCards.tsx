@@ -1,30 +1,35 @@
-import { Binary, BotMessageSquare, Code, GitBranch } from "lucide-react";
+import { Brain, ShieldCheck, Code2, Users } from "lucide-react";
 
 export const FeatureCards = () => {
   const features = [
     {
       title: "AI-Powered Analysis",
       desc: "Leverages Groq intelligence to find logic errors and unsafe patterns before commit.",
-      icon: <BotMessageSquare size={"1.5em"} />,
+      icon: <Brain size={"1.5em"} className="text-purple-500" />,
     },
     {
       title: "Pre-commit Integration",
       desc: "Seamlessly integrates with Git hooks to block critical issues in real time.",
-      icon: <GitBranch size={"1.5em"} />,
+      icon: <ShieldCheck size={"1.5em"} className="text-green-500" />,
+    },
+    {
+      title: "No Code Reviewer Needed",
+      desc: "Get instant AI feedback on every commit — your personal code reviewer that never sleeps.",
+      icon: <Users size={"1.5em"} className="text-orange-500" />,
     },
     {
       title: "Multi-language Support",
       desc: "Understands JavaScript, TypeScript, Python, and more — no extra setup needed.",
-      icon: <Binary size={"1.5em"} />,
+      icon: <Code2 size={"1.5em"} className="text-blue-500" />,
     },
   ];
 
   return (
-    <section className="py-24  text-white text-center">
-      <h2 className="text-3xl font-bold mb-10 ">
+    <section className="py-24 px-6 text-white text-center">
+      <h2 className="text-3xl font-bold mb-10">
         Why <span className="text-red-500">Developers</span> love Preflight
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {features.map((f) => (
           <div
             key={f.title}

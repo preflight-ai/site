@@ -40,8 +40,9 @@ export const FlowDiagram = () => {
           How It <span className="text-red-500">Works</span>
         </h2>
         <p className="text-zinc-400 text-center mb-16 max-w-2xl mx-auto">
-          Preflight AI integrates seamlessly into your development workflow in
-          just a few simple steps.
+          Set up in 60 seconds. No complex configuration. No CI/CD changes needed.
+          <br />
+          <span className="text-red-400 font-semibold">Just 4 simple steps to safer code.</span>
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

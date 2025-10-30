@@ -17,7 +17,7 @@ export default function DonatePage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            Support Prefl<sup className="text-red-500">.run</sup>
+            Support Preflight<sup className="text-red-500"></sup>
           </motion.h1>
 
           <motion.p
@@ -46,7 +46,7 @@ export default function DonatePage() {
           >
             <Button className="cursor-pointer flex items-center gap-2 px-8 py-6 text-base">
               <a href="https://ko-fi.com/L3L21NM95C" target="_blank">
-                Support me on Ko-fi
+                Donate via Ko-fi
               </a>
               <Heart className="text-red-400" size={18} />
             </Button>
@@ -148,7 +148,7 @@ export default function DonatePage() {
         >
           <h2 className="text-xl font-bold mb-4">Other Ways to Support</h2>
           <div className="flex flex-wrap gap-3 justify-center text-sm">
-          <a
+            <a
               href="https://github.com/preflight-ai/cli"
               target="_blank"
               rel="noopener noreferrer"

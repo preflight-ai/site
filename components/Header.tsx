@@ -15,10 +15,10 @@ export const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-end gap-1 text-2xl font-semibold transition-colors"
+          className="flex items-end gap-1 text-3xl font-semibold transition-colors"
         >
           Prefl
-          <sup className="text-lg text-red-500 font-normal">.run</sup>
+          <sup className="text-2xl text-red-500 font-normal">.run</sup>
         </Link>
 
         {/* Desktop Navigation */}
