@@ -33,9 +33,9 @@ export const TerminalDemo = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="text-zinc-400"
+            className="text-green-400"
           >
-            🧠 Analyzing staged files...
+            ✨ Analysis complete! Found 1 issue(s){" "}
           </motion.p>
 
           <motion.div
@@ -44,16 +44,17 @@ export const TerminalDemo = () => {
             transition={{ delay: 1.4 }}
             className=" rounded-lg px-3 py-2 mt-3"
           >
-            <p className="text-red-400">❌ Critical issue found</p>
+            <p className="text-red-400">❌ CRITICAL ISSUES {"(Must Fix)"}</p>
             <p className="text-zinc-400 text-xs mt-1">
-              File: <span className="text-zinc-300">File: src/App.tsx</span>
+              File:{" "}
+              <span className="text-zinc-400 text-sm">File: src/App.tsx</span>
             </p>
-            <p className="text-zinc-400 text-xs">
+            <p className="text-red-400 text-sm py-3">
               Issue: Empty useEffect with no dependency array creates an
               infinite loop that runs on every render, causing performance
               degradation and potential memory issues
             </p>
-            <p className="text-zinc-400 text-xs">
+            <p className="text-green-400 text-sm py-3">
               Fix: Remove the empty useEffect or add proper dependencies:
               {
                 "useEffect(() => { /* your effect logic */ }, [/* dependencies */])"
@@ -65,9 +66,9 @@ export const TerminalDemo = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2 }}
-            className="text-green-400 mt-4"
+            className="text-red-400 mt-4"
           >
-            ✅ Commit blocked — critical issue detected and reported.
+            🛑 Commit blocked due to critical issues. Please fix them first.
           </motion.p>
         </div>
       </div>

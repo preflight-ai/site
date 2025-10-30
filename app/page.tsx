@@ -65,6 +65,14 @@ export default function Home() {
           className="mt-6 text-sm text-zinc-500"
         >
           No installation required • Get started in seconds
+          <br />
+          <Link
+            href="https://www.npmjs.com/package/@preflight-ai/cli?activeTab=readme"
+            target="_blank"
+            className="text-red-500 text-lg font-semibold mt-2"
+          >
+            8k+ installs on npm
+          </Link>
         </motion.p>
 
         <motion.div
